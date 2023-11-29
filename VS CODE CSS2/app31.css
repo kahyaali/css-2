@@ -1,0 +1,136 @@
+.flex-container {
+    display: flex;
+    /*display:flex deyince kutular yan yanan sıralandı*/
+    background-color: red;
+    flex-direction: row-reverse;
+    /*sağ taraftan başlayarak sıralama yapar kutu1 sağa yaslanır ve kutu2 kutu3 diye devam eder*/
+    flex-direction: column;
+    /*kutuları alt alta sıralar yukarıdan aşağıya olacak şekilde*/
+    flex-direction: column-reverse;
+    /*alt alta sıralar bu sefer kutular tersten sıralanmaya başlar*/
+    flex-direction: row;
+    /*yan yana sıralar row default değerdir soldan sağa sıralar*/
+
+    flex-wrap: nowrap;
+    /*sayfayı küçültükçe kutucuklar kaybolacaktır yani sayfaya sığmayacak*/
+    flex-wrap: wrap;
+    /*sayfa küçüldükçe kutucuklar bir alt satıra geçmeye başlayacaktır taşma olduğunda kutucuklar bir alt satıra geçecektir*/
+    flex-wrap: wrap-reverse;
+    /*sayfa küçüldükçe tersten bir alt satıra geçmeye başlayacaktır*/
+    flex-flow: row wrap;
+    /*hem flex-direction hemde flex-wrap özelliğini aynı anda kullandığımız yazım şeklidir*/
+}
+
+/*flex-container içinde olup başka bir element içinde olmayan tüm div elementlerine verilen css kodlarını uygular*/
+.flex-container > div {
+    padding: 25px;
+    font-size: 25px;
+    background-color: white;
+    margin: 10px;
+    width: 200px;
+}
+
+.flex-container1 {
+    display: flex;
+    background-color: yellow;
+    justify-content: flex-start;
+    /*default özellik kutuları soldan sağa doğru yanyana hizalar*/
+    justify-content: flex-end;
+    /*kutuları sağdan sola doğru hizalayarak yanyana sıralar*/
+    justify-content: center;
+    /*kutuları merkeze ortalayacak şekilde sıralar*/
+    justify-content: space-around;
+    /*soldan ve sağdan 1 birim kutu aralarında 2 birim boşluk bırakacak şekilde yan yana sıralar*/
+    justify-content: space-between;
+    /*kutuları sağa ve sola boşluk olmayacak şekilde yaslar ve arada kalan kutulara eşit boşluklar vererek yanyana hizalar*/
+    justify-content: space-evenly;
+    /*baştan sondan ve kutu aralarında eşit boşluklar bırakcak şekilde yan yana sıralar*/
+}
+
+.flex-container2 {
+    display: flex;
+    background-color: blue;
+    height: 500px;
+    align-items: stretch; /*defaul özellik olarak geliyor div yüksekliği kadar kutularda yükseklik alıyor*/
+    align-items: flex-start; /*kutuları yukarıdan hizalar*/
+    align-items: center; /*merkezde sıralama yapar*/
+    align-items: flex-end;  /*altta hizalama yapar*/
+    align-items: baseline;  /*taban çizgisi değeri esnek kabın içerisindeki öğelerin metin taban çizgilerine göre dizilmesini sağlar*/
+}
+
+.flex-container1 > div {
+    padding: 25px;
+    font-size: 25px;
+    background-color: white;
+    margin: 10px;
+    width: 200px;
+}
+
+.flex-container2 > div {
+    padding: 25px;
+    font-size: 25px;
+    background-color: white;
+    margin: 10px;
+    width: 200px;
+}
+
+
+.flex-container3 {
+    display: flex;
+    background-color: orange;
+    height: 500px;
+    flex-flow: row wrap;
+    align-content: flex-start; /*kutucukları yukarıdan hizalar*/
+    align-content: flex-end; /*kutucukları alttan hizalar*/
+    align-content: center;  /*kutucuları merkezde hizalar*/
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+    
+}
+
+.flex-container3 > div {
+    padding: 25px;
+    font-size: 25px;
+    background-color: white;
+    margin: 10px;
+    width: 200px;
+}
+
+.flex-container4{
+    display: flex;
+    background-color: darkolivegreen;
+    height: 400px;
+    align-items: flex-end;
+}
+
+.flex-container4 > div {
+    padding: 25px;
+    font-size: 25px;
+    background-color: white;
+    margin: 10px;
+    width: 350px;
+    flex: 1; /*bu div içerisindeki tüm elementler 1 birim değerinde büyüsün küçülsün demek anlamına geliyor*/
+    height: 200px;
+}
+
+.div1{
+order: 3;
+flex-grow: 1; /*sayfa büyüdükçe verilen değer kadar birim olarak büyür*/
+flex-shrink: 3; /*sayfa küçüldükçe verilen değer kadar birim olarak küçülür*/
+flex-basis:200px ; /*elemente başlangıç değeri vermeye yarar sayfa büyüdüğünde 200px üzerine çıkmıyor */
+}
+
+.div2{
+order: 2;
+flex-grow: 2;
+flex-shrink: 2;
+align-self: flex-start;
+}
+
+.div3{
+order: 1;
+flex-grow: 3;
+flex-shrink: 1;
+align-self: center;
+}

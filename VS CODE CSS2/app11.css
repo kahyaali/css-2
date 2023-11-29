@@ -1,0 +1,29 @@
+
+/*Div'lerden birine float:left dersek diğer kutu diğerinin arkasında kalır yan yana gelmeleri için ikisinede float:left dememiz gerek*/
+.div1{
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+    float: left;
+}
+
+.div2{
+    border: 1px solid red;
+    width: 150px;
+    height: 150px;
+    margin:3px;
+    float: left;
+}
+
+
+/*clear left demeseydik kutu 3 kutu 1'in arkasında kalacaktı folat:left demedğimiz için,
+kutu 3 diğerlerinin yanına değilde alttan devam etmesi için clear:left dememiz gerek*/
+.div3{
+    border: 1px solid yellow;
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+    clear: left;  
+    clear: both; /*ikisinide temizle hem sağ hem sol float işlemini temizle demek anlamına gelir*/
+}

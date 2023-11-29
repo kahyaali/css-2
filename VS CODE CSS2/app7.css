@@ -1,0 +1,39 @@
+table {
+    border: 1px solid black;
+    empty-cells: show; /*satır içerisindeki bir veri silindiğinde o hücreyi boş göster şeklini korur*/
+    empty-cells: hide; /*satır içerisindeki bir veri silindiğine o hücreyi gizler*/
+    border-spacing: 10px;
+    border-collapse: collapse; /*tablodaki satır sütün borderlerini kaldırır tek bir border bölmesi bırakır*/
+    width: 50%;
+    height: 400px;
+    caption-side: top;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left; /*yazıları sola yaslar*/
+    text-align: right; /*yazıları sağa yaslar*/
+    text-align: center; /*yazıları ortalar*/
+    vertical-align: top; /*yazıları dikey eksende yukarı alır*/
+    vertical-align: bottom; /*yazıları dikey eksende alta alır*/
+    vertical-align: middle; /*yazıları dikey eksende ortalar*/
+}
+
+/*satılara hover özelliği uyguluyoruz mouse ile üzerine geldiğimizde olmasını istedğimiz css kodlarını yazıyoruz*/
+tr:hover{
+background-color:aquamarine;
+}
+
+tr:nth-child(even) /*çift numaralı satırları gri renk yaptı even çift olanlara uygula demek*/
+{
+    background-color: gray;
+    color: red;
+}
+
+tr:nth-child(odd)  /*tek numaralı satırları blue renk yaptı odd tek olanlara uygula demek*/
+{
+background-color: darkcyan;
+color: white;
+}

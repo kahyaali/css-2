@@ -1,0 +1,12 @@
+
+
+#icon{
+font-size: 100px;  /*iconun boyutunu büyüttük*/
+color: red; /*iconun rengini değiştirdik*/
+opacity: 0.3;
+}
+#icon:hover{
+    font-size: 200px;
+    color: rebeccapurple;
+    opacity: 0.5;
+}

@@ -1,0 +1,26 @@
+
+/*span inline bir elementtir border atadığımzda içindeki yazı boyutu kadar border atayacaktır*/
+
+span{
+border:2px solid black;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 5px;
+padding-right: 5px;
+padding: 8px,5px,8px,5px;
+padding: 10px; /*heryerden 10px boşluk uygular*/
+}
+
+.div1{
+    background-color: red;
+    width: 100px;
+    margin-top :20px;
+}
+
+.div2{
+    background-color: green;
+    width: 100px;
+    padding: 15px; /*div'in genişliğini arttırır box-sizing:border-box dersek div'in boyutu değişmez div'in boyutu değişmez ama içerisindeki yazının şekli değişir alt satıra iner uzun ise*/
+    box-sizing: border-box;
+
+}

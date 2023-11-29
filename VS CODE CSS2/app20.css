@@ -1,0 +1,26 @@
+
+
+/*body elementini gördüğünde baslik adına bir sayaç oluştur ve 1 den başlasın demek*/
+body{
+    counter-reset:baslik ;
+}
+
+/*h1 elementini her görüdüğünde başına Bölüm yazacak ve counter değerini yazacak*/ 
+h1::before{
+    counter-increment: baslik;
+    content: "Bölüm " counter(baslik) " : ";
+}
+
+/*h1 etiketini göründe counteri resetliyor ki alt başlık birden fazla olan yerlerde sıra numarası versin diye*/
+h1{
+    counter-reset: altbaslik;
+}
+h2::before{
+    counter-increment: altbaslik;
+    content: "Alt Bölüm " counter(altbaslik) ":";
+}
+
+h2::before{
+    counter-increment: altbaslik;
+    content: "Alt Bölüm " counter(baslik) "." counter(altbaslik) ":";
+}

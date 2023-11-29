@@ -1,0 +1,54 @@
+/*atributesi target olanları seçiyor*/
+a[target] {
+    color: red;
+    font-size: 32px;
+}
+
+/*target ifadesi _blank olan attributeyi seç demek*/
+a[target="_blank"] {
+    color: yellow;
+    font-size: 32px;
+}
+
+/*a elementinde href attributesi http olanları işleme al demek https olanlarıda alır https olanları almaması için http: diye ifade ederiz
+bu ifade birşey ile başlayan anlamına gelir*/
+a[href ^="http:"] {
+    color: blue;
+    font-size: 20px;
+}
+
+/*başında verilen ifadeyi arar*/
+a[href ^="https"] {
+    color: green;
+    font-size: 20px;
+}
+
+/*dolar işareti ile sonu verilen ifade ile bitenlere css uygula demek
+bu ifadede bir şey ile biten anlamına gelir*/
+a[href $=".net"] {
+    color: green;
+    font-size: 20px;
+}
+
+/*içerisinde google ifadesi geçen tanımlamalara css uygular*/
+a[href *="google"] {
+    color: darkorchid;
+    font-size: 40px;
+}
+
+/*form etiketlerine css uygular attribute ile tanımlanan ifadelere*/
+input[type=text] {
+    border: 2px solid red;
+    font-size: 32px;
+}
+
+/*input olup type text olan ifadeye focus olunduğunda yani, tıklandığında uygulanacak css kodları yazılır*/
+input[type=text]:focus {
+    border: 5px solid blue;
+    font-size: 40px;
+}
+
+input[id=password1] {
+    border: 3px solid red;
+    font-size: 30px;
+}

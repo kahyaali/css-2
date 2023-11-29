@@ -1,0 +1,75 @@
+/*LİNEER*/
+/*arka plan rengini sarı ile başlayıp yeşil tonlarda bitecek şekilde ayarladık yukarıdan aşağıya geçiş yapar*/
+#div1{
+    border: 1px solid red;
+    width: 100%;
+    height:200px ;
+    background-image: linear-gradient(to bottom, yellow,green);
+}
+
+/*arka plan rengini sarı ile başlayıp yeşil tonlarda bitecek şekilde ayarladık aşağıdan yukarıya geçiş yapar*/
+#div2{
+    border: 1px solid red;
+    width: 100%;
+    height:200px ;
+    background-image: linear-gradient(to top, yellow,green);
+}
+
+/*arka plan rengini sarı ile başlayıp yeşil tonlarda bitecek şekilde ayarladık soldan sağa geçiş yapar*/
+#div3{
+    border: 1px solid red;
+    width: 100%;
+    height:200px ;
+    background-image: linear-gradient(to left, yellow,green);
+}
+
+/*arka plan rengini sarı ile başlayıp yeşil tonlarda bitecek şekilde ayarladık sağdan sola geçiş yapar*/
+#div4{
+    border: 1px solid red;
+    width: 100%;
+    height:200px ;
+    background-image: linear-gradient(to right, yellow,green);
+}
+
+/*arka plan rengini sarı ile başlayıp yeşil tonlarda bitecek şekilde ayarlar yüzde 10 parçalara bölerek yapar divi*/
+#div5{
+    border: 1px solid red;
+    width: 100%;
+    height:200px ;
+    background-image: repeating-linear-gradient(yellow,green 10%);
+}
+
+/*arka plan rengini sarı ile başlayıp yeşil tonlarda bitecek şekilde ayarladık aşağıdan yukarıya geçiş yapar*/
+#div6{
+    border: 1px solid red;
+    width: 100%;
+    height:200px ;
+    background-image: repeating-linear-gradient(yellow,green 10%,red 25%);
+}
+
+/*arka plan rengini sarı ile başlayıp yeşil tonlarda bitecek şekilde ayarladık soldan sağa geçiş yapar*/
+#div7{
+    border: 1px solid red;
+    width: 100%;
+    height:200px ;
+    background-image: repeating-linear-gradient(45deg, yellow,green 10%,red 25%);
+}
+
+/*RADYAL*/
+/*arka plan rengini sarı ile başlayıp yeşil tonlarda bitecek şekilde ayarladık etraf yeşil ortası sarı olacak şekilde ayarlar*/
+#div8{
+    border: 1px solid red;
+    width: 100%;
+    height:200px ;
+    background-image: radial-gradient( yellow,green,red);
+}
+
+#div9{
+    border: 1px solid grey;
+    width: 100%;
+    height:200px ;
+    background-image: repeating-radial-gradient(red,green 10%,yellow 20%);
+}
+
+
+

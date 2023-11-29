@@ -1,0 +1,67 @@
+
+
+#div1{
+    border: 1px solid red;
+    height: 150px;
+    width: 100%;
+    position: static;  /*default olarak bu şekilde geliyor bu ifadeyi yazmasaydık bile dfault olarak bu şekilde olacaktı*/
+}
+
+#div2{
+    border: 1px solid red;
+    height: 150px;
+    width: 100%;
+    position: static;
+}
+
+#div3{
+    border: 1px solid red;
+    height: 150px;
+    width: 100%;
+    position: static;
+}
+
+#div4{
+    border: 2px solid black;
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;  /*absolute elementi sayfadan bağımsız hareket ettirmek için kullanılır top bottom left right özellikleri ile istediğimiz şekilde konumlandırabiliriz*/
+    top: 500px;
+    left: 250px;
+    right: 250px;
+    bottom: 200px;
+}
+#div5{
+    border: 2px solid red;background-color: blue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    right: 200px;
+    bottom: 200px;
+    z-index: -1; /*z-index:1 dediğim için mavi olan sarının önüne geçti eğer sarı olan kutuya z-index:1 deseydim mavi kutunun öznüne geçecekti*/
+}
+
+#div6{
+    border:2px solid black;
+    background-color: green;
+    width: 400px;
+    height: 400px;
+position: absolute;
+    margin-top: 300px;
+}
+
+/*div7 position:absolute div6 position:absolute demez isek div7'ye top:10 dediğimizde içindeki div'in sınırlarını değil dışındaki sayfanın sınırlarını referans alır 
+div6'da position:absolute dersek bu sefer top:10 dediğimizda içinde bulunduğu div'in sınırlarına göre top:10 değerini alır*/
+#div7{
+    border: 2px solid red;
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+
+}

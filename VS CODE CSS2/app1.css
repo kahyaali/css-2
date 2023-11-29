@@ -1,0 +1,82 @@
+
+
+p{
+   /* 
+    border-style: solid;
+    border-width: medium;
+    border-width: thick; 
+    border-width:thin;  
+    */
+    
+
+   /* 
+   border-right-width:3px;
+    border-left-width:4px;
+    border-bottom-width:5px;
+    border-top-width:6px; 
+    */
+}
+
+.item1{
+    border-width: 4px;
+    border-style: dotted;
+}
+
+.item2{
+    border-width: 4px;
+    border-style: dashed;
+}
+
+.item3{
+    border-width: 4px;
+    border-style: solid;
+}
+
+.item4{
+    border-width: 4px;
+    border-style: double;
+}
+
+.item5{
+    border-width: 4px;
+    border-style: groove;
+}
+
+.item6{
+    border-width: 4px;
+    border-style: ridge;
+}
+
+.item7{
+    border-width: 10px;
+    border-style: inset;
+}
+
+.item8{
+    border-width: 10px;
+    border-style: outset;
+}
+
+.item9{
+    border-width: 4px;
+    border-style: none;
+}
+
+.item10{
+    border-width: 4px;
+    border-style: hidden;
+}
+
+.out{
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 300px;
+    width: 500px;
+
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: red;
+    outline: 10px solid yellow; /*bu şekildede tanımlayabiliriz*/
+
+    outline-offset: 5px; /*border ile outline arasında verilen değer kadar boşlk bırakıp ondan sonra outline oluşturuyor*/
+}

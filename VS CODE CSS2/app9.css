@@ -1,0 +1,30 @@
+
+/*block elementler tüm satırı kaplar inline elementler içerisindeki yazı boyutu kadar alan kaplar ve yanyana gelir elementler*/
+li{
+    border: 1px solid black;
+    list-style-type: none;
+    display: inline;
+}
+
+span{
+    border:1px solid red;
+    display: block;
+}
+
+.div1{
+    border:2px solid red;
+    width: 150px;
+    height: 100px;
+
+    margin-top:20px;
+    /*display: none; */ /*display:none dedğimizde div2 div1'in yerini aldı*/
+    visibility: visible;
+    visibility: hidden; /*visibility:hidden dediğimizde div1'i saklar div2 div1'in yerine geçmez div1 görünmezlik kazanır fakat yerini korur*/
+}
+
+.div2{
+    border: 2px solid black;
+    width: 150px;
+    height: 100px;
+
+}

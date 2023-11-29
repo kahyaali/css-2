@@ -1,0 +1,55 @@
+
+
+/**2px yatay gölgelendirme 3px dikey gölgelendirme yani yatayda gölgelendirme kaç px kayacak diğeri dikeyde gölgelendirme kaç px kayacak demektir
+5px alanındaki ifade ise gölgenin bulanıklığını tanımlamak için kullanılır*/
+h1{
+    text-shadow: 2px 3px 5px yellow;
+}
+
+h2{
+    color: white;
+    text-shadow: -1px 0 black,0 1px black,1px 0 black,0 -1px black;
+}
+
+/*word-wrap:normal yazarsam çoooookkkkk yazısı divin dışına taşacak fakat word-wrap:break-word yazarsam div dikey olarak değer kısıtlaması vermediğimiz için div aşağıya doğru uzayacak
+ve çooookkkkk kelimesi divin içinde kalacak*/
+
+#div1{
+    border: 1px solid black;
+    width: 50px;
+   // word-wrap: break-word;
+}
+
+
+/*word-break:break-all dersek yine taşan yazıları div içine alacak dikey olarak div içine sığacak şekilde tanımlayacak*/
+#div1{
+    border: 1px solid black;
+    width: 50px;
+    word-break: break-all; /*kelimeyi divin kapasitesine göre istediği yerden kırıyor*/
+    word-break: break-word; /*burda ise kelimeleri başlarını satırda ayzıyor sığmayanları kelime sonundan kırıyor*/
+}
+
+#div3{
+    border: 1px solid black;
+    width: 50px;
+    overflow: hidden;
+    text-overflow: clip; /*default değerdir*/
+    text-overflow: ellipsis; /*kutuya sığmayan kelimenin sonuna ... koyar bu kelimenin devamı var fakat kutuya sığmıyor demek*/
+}
+#div3:hover{
+    overflow: visible; /*div3 gelince overflow özelliğini visible yapıyoruz sığmayan kelimeler görünmüş oluyor*/ 
+}
+
+p{
+    writing-mode: horizontal-tb; /*default bu şekilde geliyor*/
+    writing-mode: vertical-lr; /*kelimeyi yukarıdan aşağıya dikey yazar*/
+    writing-mode: vertical-rl;
+}
+
+#div2{
+    text-align-last: auto; /*default olan değerdir*/
+    text-align-last: left; /*son satırı sola yaslar*/
+    text-align-last: right; /*son satırı sağa yaslar*/
+    text-align-last: center; /*son satırı ortalar*/
+    text-align-last: justify; /*son satırı sağa sola yaslar*/
+}

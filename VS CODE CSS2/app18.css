@@ -1,0 +1,32 @@
+
+div{
+    text-align: justify;
+}
+
+/*ilk satırı seçerek css kodlarını uygular*/
+div::first-line{
+    color: red;
+    background-color: black;
+    font-size: 32px;
+}
+
+/*ilk harfi verir*/
+div::first-letter{
+    color: yellow;
+    font-size: 40px;
+}
+
+/*yazının öznüne CSS DERSLERİ YAZAR*/
+div::before{
+    content: "CSS DERSLERİ" ;
+}
+/*yazının sonuna CSS DERSLERİ yazar*/
+div::after{
+    content: "CSS DERSLERİ";
+}
+
+/*selection dediğimizde mouse ile yazıları seçemeye başladığımıza yazı rengi beyaz seçim yapılan arka plan rengi kırmızı olacaktır*/
+div::selection{
+    color: white;
+    background-color: red;
+}

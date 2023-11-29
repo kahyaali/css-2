@@ -1,0 +1,29 @@
+
+
+.out{
+    border: 2px solid black;
+    width: 150px;
+    height: 100px;
+}
+
+.in{
+    border: 2px solid red;
+    width: 150px;
+    height: 100px;
+    margin-top:15px;/*bu element kendi üst sınırından üsteki elementin alt sınırı arasında 15px boşluk bırakır*/
+    margin-bottom:15px; /*elementin alt sınırı ile altındaki elementin üst sınırı arasında 15px boşluk bırakır*/
+    margin-left: 15px; /*elementin solunda itibaren 15px lik boşluk bırakır*/
+}
+
+.deneme{
+    border:2px solid yellowgreen;
+    width: 400px;
+    height: 200px;
+    margin: 50px;
+
+    //margin: auto; /*her taraftan eşit boşluklar bırakarak sayfanın ortasına getirir elemanı*/
+}
+h1{
+    margin: inherit;  /*inherit element herhangi bir div elementi içinde ise yada kendinden önce başka bir element var ise git ondaki margin değerini al ve kendine uygula demek*/
+}
+

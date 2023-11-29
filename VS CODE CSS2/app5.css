@@ -1,0 +1,25 @@
+
+
+a:link{
+text-decoration: none;
+}
+
+/*sayfaya tıkladıktan sonra alacağı şekili belirliyoruz yani sayfayı ziyaret edince alacağı şekil css kodları*/
+a.visited{
+    text-decoration:overline;
+}
+
+/*imlec link üzerine gelince alacağı şekli belirliyoruz*/
+a:hover{
+background-color: green;
+color: antiquewhite;
+text-decoration: underline;
+border: 1px solid red;
+}
+
+/*mouse tıklama anında alacağı şekilleri belirliyoruz mouse tıklayıp tıklı tuttuğumuz anda alacağı şekil*/
+a:active{
+color: red;
+background-color: yellow;
+text-decoration: line-through;
+}

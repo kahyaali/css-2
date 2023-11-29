@@ -1,0 +1,25 @@
+
+/* div p ile div > p aynı işlemi yapar div içindeki bütün p elementlerine css kodlarını uygular
+div > p dediğimde  p div içinde başka bir elementin içinde ise div > p bu p elementini kapsamayacaktı div p deseydim yine hepsini kapsardı */
+div  p{
+    color: red;
+}
+/* div p ile div > p aynı işlemi yapar div içindeki bütün p elementlerine css kodlarını uygular
+div > p dediğimde  p div içinde başka bir elementin içinde ise div > p bu p elementini kapsamayacaktı div p deseydim yine hepsini kapsardı 
+ilk h1 değeri span etiketi içinde olduğundan onun rengini mavi yapmadı*/
+div > h1{
+    color: blue;
+}
+/* div + p dediğimde div dışında kalan ilk elementin rengini verilen renk ile değiştirir */
+div + p{
+    color: yellow;
+}
+
+/*div dışında kalan bütün p elementlerinin rengini değiştirir*/
+div ~ p{
+    color:darkcyan;
+}
+/*div içinde class p1 olan p elementlerine css kodlarını uygula demek*/
+div p.p1{
+    color: green;
+}

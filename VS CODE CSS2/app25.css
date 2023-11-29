@@ -1,0 +1,60 @@
+
+
+#div1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition-property: width; /*hover olduğumda genişlik değeri değişsin istiyorum fakat efekt vererek değişsin istiyorum bu yüzden width yazdık*/
+    transition-duration: 3s; /*efekt süresini vermiş olduk 3s genişliği 400px yapacak 3s eski boyutuna getiriyor*/
+    transition: width 3s; /*bu şekilde tek satırda da yazabiliriz*/
+    transition: height 3s; /*burada yüksekliği değiştireceğiz diyoruz*/
+    transform: width 3s , height 3s; /*Burada hem yükseklik hem genişlik değiştireceğimiz belirtiyoruz*/
+    transition: width 3s , height 3s , background-color 3s;
+    transition-timing-function: ease; /*yavaş başlar hızlanır sona doğru tekrar yavaşlar*/
+    transition-timing-function: linear; /*başladığı hızda devam eder*/
+    transition-timing-function: ease-in; /*yavaş başlayıp hızlanıyor en son hızda da bitişe kadar devam ediyor*/
+    transition-timing-function: ease-out; /*hızlı başlayıp sonda yavaş bitiriyor*/
+    transition-timing-function: ease-in-out; /*yavaş başladı hızlandı yavaş bitirdi*/
+    transition-delay: 3s; /*geciktirme yapmak için kullanılır hover olunca 3s de genişliği 800 yapacak fakat efekt 2s gecikme ile başlaycak*/
+}
+
+#div2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition-property: width; /*hover olduğumda genişlik değeri değişsin istiyorum fakat efekt vererek değişsin istiyorum bu yüzden width yazdık*/
+    transition-duration: 3s; /*efekt süresini vermiş olduk 3s genişliği 400px yapacak 3s eski boyutuna getiriyor*/
+    transition: width 3s , height 3s , background-color 3s , transform 3s;
+    transition-timing-function: ease; /*yavaş başlar hızlanır sona doğru tekrar yavaşlar*/
+    transition-timing-function: linear; /*başladığı hızda devam eder*/
+    transition-timing-function: ease-in; /*yavaş başlayıp hızlanıyor en son hızda da bitişe kadar devam ediyor*/
+    transition-timing-function: ease-out; /*hızlı başlayıp sonda yavaş bitiriyor*/
+    transition-timing-function: ease-in-out; /*yavaş başladı hızlandı yavaş bitirdi*/
+    transition-delay: 3s; /*geciktirme yapmak için kullanılır hover olunca 3s de genişliği 800 yapacak fakat efekt 2s gecikme ile başlaycak*/
+}
+
+#div3{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+ transition: width 3s linear 2s; /*genilik 3s 800px olacak fakat 2s gecikmeli başlaycak efekt*/
+}
+
+#div1:hover{
+    width: 800px;
+    height: 800px;
+    background-color: yellow;
+}
+
+#div2:hover{
+    width: 800px;
+    height: 800px;
+    background-color: yellow;
+    transform: rotate(45deg);
+}
+
+#div3:hover{
+    width: 800px;
+    background-color: yellow;
+}
+

@@ -1,0 +1,28 @@
+
+
+ul{
+    list-style-type: disc; /*default olarak gelir içi dolu daire işaretini koyar*/
+    list-style-type:circle; /*içi boş daire oluşturur*/
+    list-style-type: square; /*içi dolu kare oluşturur*/
+    list-style-type: none; /*liste tanımlarının aşındaki işaretleri kaldırır*/
+
+    list-style-image: url("css.png");  /*liste elemanlarının başına dışarıdan alınan iconu koymaya yarar*/
+
+    list-style-position: inside; /*list elemanlarının işaretlerini border içine alır*/
+
+    list-style-position: outside; /*list elemanlarının işaretlerini border dışında bırakır*/
+}
+ol{
+    list-style-type: decimal; /*default olarak gelir sayı koyar liste elemanlarının başına*/
+    list-style-type: decimal-leading-zero; /*başına sıfır koyar sayıların 01 02 03 gibi*/
+    list-style-type:lower-alpha; /*liste elemanlarının başına küçük harfler koyar*/
+    list-style-type: lower-latin; /*liste elemanlarının başına küçük harfler koyar*/
+    list-style-type: lower-roman; /*liste elemanlarının başına küçük roma rakamları koyar*/
+    list-style-type: lower-greek; /*liste elemanlarının başına küçük romen harflerini koyar*/
+    list-style-type: upper-alpha; /*liste elemanlarının başına büyük harfler koyar*/
+    list-style-type: upper-roman; /*liste elemanlarının başına büyük roma rakamlarını koyar*/
+}
+
+ul li{
+    border: 1px solid black;
+}

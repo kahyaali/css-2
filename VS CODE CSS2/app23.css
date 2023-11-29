@@ -1,0 +1,52 @@
+
+
+/*transform:translate(100px,200px) anlamı div elementini x ekseninde 100px y ekseninde 200px ötele demek translate öteleme anlamına gelmektedir*/
+.div1{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    transform: translate(100px,200px); /*x ekseninde 100px y ekseninde 200px öteleme yapar*/
+    transform: translateX(100px); /*sadece x ekseninde 100px öteleme yapar*/
+    transform: translateY(100px); /*y ekseninde 100px öteleme yapar*/
+}
+
+.div2{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transform: rotate(45deg);
+    margin-top: 200px;
+}
+
+.div3{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transform: scale(2,4); /*2 genişlik kısmını 4 yükseklik kısmını ifade eder genişliği 2 ile yüksekliği 4 ile çarpıp boyutlandırır*/
+    transform: scaleX(2);
+    transform: scaleY(3);
+    margin-top: 200px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+
+/*skew eğim demek verilen değer kadar div elementini verilen düzlemler üzerinde eğim verir*/
+.div4{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    transform: skewX(25deg); /*25 derece eğim verir x eksenine*/
+    transform: skewX(-25deg);
+    transform: skewY(25deg);
+    transform: skewY(-25deg);
+    transform: skew(25deg,45deg);
+}
+
+.div5{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    transform: matrix(1,-0.5,0,1,0,0);
+}

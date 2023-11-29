@@ -1,0 +1,16 @@
+
+
+/*right:10px dersek kendi sınırından 10px boşlık bırakıp sola kaymaz sayfanın sağına geçer ve 10 px boşluk olacak şekilde sayfanın sağına konumlanır*/
+img{
+    position: fixed;
+    top: 150px;
+    right: 20px;
+}
+
+H1{
+    color: red;
+    text-align: center;
+    background-color: aquamarine;
+    position: sticky;
+    top: 20px;
+}

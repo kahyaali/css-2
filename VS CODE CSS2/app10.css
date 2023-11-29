@@ -1,0 +1,12 @@
+
+
+#div1{
+    border: 2px solid black;
+    width: 600px;
+    height: 300px;
+    text-align: justify;  /*bu komut ile yazıyı iki yana yaslayarak yazdırdı*/
+    overflow: visible;  /*default değer bu şekildedir*/
+    overflow: hidden; /*overflow:hidden dediğimde div'den taşan kısmı gizler*/
+    overflow: scroll; /*taşan kısımları görebilmek için kaydırma çubuklarını çıkarır*/
+    overflow: auto;  /*overflow:auto dersem sadece taşma olan alana ait scroll çubuğu çıkarır scroll dediğimizde hem yatayda hem dikeyde scroll çubuğu getiriyordu*/
+}

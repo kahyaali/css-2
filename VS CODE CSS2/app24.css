@@ -1,0 +1,14 @@
+
+.div1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: rotateX(180deg); /*90 derece döndürme yaptığımızda ekranda hiçbirsey görünmez çünkü z ekseninde değer yok z sıfır çünkü*/
+    transform: rotateY(180deg);
+    transform: rotateZ(180deg);
+    transform-origin: 200px 100px;  /* x ekseninde 200px y ekseninde 100px orgini yerleştiriyor*/
+    transform: rotate3d(5,5,5,90deg);
+}

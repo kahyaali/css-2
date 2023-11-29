@@ -1,0 +1,75 @@
+
+
+#div1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative; /*animasyomda konum değiştirmesi için position:relaive olarak seçiyoruz yoksa top left konumlarına gitmez*/
+    animation-name: ornek; /*animation ismi veriyoruz */
+    animation-duration: 3s; /*animasyon süresini giriyoruz*/
+    animation-delay: 2s; /*animasyonu gecikmeli başlatır*/
+    animation-iteration-count: 2s; /*buraya 2 yazdığım için animasyonu 2 kez tekrarladı kaç yazarsam o değer kadar animasyonu tekrarlar*/
+    animation-iteration-count: infinite; /*animasyonu sonsuza dek yapacak sayfa kapanana kadar animasyon devam eder*/
+    animation-direction: normal; /*default değer*/
+    animation-direction: reverse;  /*animasyon tersten başlar animasyonu tersine çevirir*/
+    animation-direction: alternate; /*animasyonu ilk olarak doğru yönde ikinci olarak ters yönde başlatır eğer sonsuz hareket ediyor ise bir düz bir ters hareket olarak devam eder*/
+    animation-direction: alternate-reverse; /*animasyon ters başlar düz devam eder sonra yine ters yine düz hareket eder*/
+    animation-timing-function: linear;
+    animation-timing-function: ease;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
+    animation: ornek 8s linear 2s infinite alternate; /*tek satırda tüm özellikleri yazabiliriz*/
+}
+
+/*animasyon ismini yazıyoruz from to anlamı kırmızı arka plan renginden to yeşil arka plan rengine gitsin*/
+@keyframes ornek {
+    from{
+          background-color: red;
+    }
+    to{
+       background-color: green;
+    }
+}
+
+/*verilen sürenin yüzde değerlerine göre renk geçişleri yapar*/
+@keyframes ornek {
+    0%{
+        background-color: green;
+        left: 0;
+        top: 0;
+    }
+
+    25%{
+        background-color: yellow;
+        left:400px;
+        top: 0;
+    }
+
+    50%{
+        background-color: blue;
+        left: 400px;
+        top: 200px;
+    }
+
+    75%{
+        background-color: grey;
+        left: 0;
+        top: 200px;
+    }
+
+    100%{
+        background-color: darkorange;
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes ornek {
+    from{
+         background-color: blue; left: 0;
+    }
+    to{
+    background-color: orange;   left: 300px;
+    }
+}

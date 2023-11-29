@@ -1,0 +1,39 @@
+
+
+li{
+    list-style-type: none; /*liste başındaki simgeleri kaldırdık*/ 
+    border: 1px solid red;
+    float: left; /*liste elementlerini float.left diyerek yan yana sıraladık*/
+    width: 250px;
+    text-align: center; /*texti ortaladık*/
+    margin-right: 3px;
+}
+
+div{
+    border: 1px solid black;
+    width: 900px;
+    height: 100px;
+}
+
+/*genişlik değeri 910 altına düşünce verilen css kodlarını uygula demek and ifadesinden sonra boşluk vermek gerek yoksa kodlar çalışmıyor*/
+@media screen and (max-width:910px){
+div{
+    width: 600px;
+}
+
+/*clear.left diyerek float.left özelliğini temizlemiş olduk*/
+li{
+    clear: left;
+}
+}
+
+@media screen and (max-width:600px){
+    div{
+        width: 400px;
+    }
+    
+    /*clear.left diyerek float.left özelliğini temizlemiş olduk*/
+    li{
+        width: 150px;
+    }
+    }

@@ -1,0 +1,12 @@
+
+
+img{
+    border: 2px solid black;
+    width: 400px;
+    height:400px ;
+    object-fit: fill;  /*default değer olarak bu şekilde gelir*/
+    object-fit: cover; /*verilen boyutlara görüntüyü sığdırır ve daha net hal alır cover en boy oranını koruyarak görüntüyü keserek daha yakınlaştırılmış gibi getiriyor*/
+    object-fit: contain; /*yeniden boyutlama yaparak tüm resmi ekrana sığdırıyor en boy olarak*/
+    object-fit: scale-down; /*contain gib işlem yapar*/
+    object-fit: none; /*boyutlandırma yapmadan resmi getirir*/
+}

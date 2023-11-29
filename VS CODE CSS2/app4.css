@@ -1,0 +1,37 @@
+
+.deneme{
+    border:2px solid red;
+    width: 400px;
+    height: 400px;
+
+    /*maximum yükseklik ve genişlik verdik scroll bar ile en çok verilen maximum değerlere kadar büyütüp genişletebiliriz*/
+    max-width: 600px;
+    max-height: 600px;
+  /*minimum yükseklik ve genişlik verilir bu değerlerin altına inilmez*/
+    min-width: 200px;
+    min-height: 200px;
+
+    resize: both;  /*hem yatayda hem düşeyde yeniden boyulandırmaya yarıyor overflow ile kullanılır div'i köşesinden tutarak istedğimiz şekilde boyutlandırabiliyoruz*/
+    overflow: auto; /*scroll elemanının oluşmasını sağlıyor*/
+}
+
+.y{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    word-spacing: 30px;  /*kelimeler arasında boşluk bırakmak için kullanılır*/
+    letter-spacing: 10px;  /*harfler arasında boşluk bırakmak için kullanılır*/
+    direction: ltr; /*yazının nerden başlayacağını belirtir ltr default soldan başlayacak demek*/
+    direction: rtl;  /*yazı sağdan başlayacak demek*/
+    unicode-bidi: bidi-override; /*yazıyı tersten yazmak için kullanılır*/
+}
+
+.t{
+    text-indent: 100px; /*paragraf başı bırakmak için kullanılır*/
+    text-transform: lowercase; /*bütün harfleri küçük yapar*/
+    text-transform: uppercase; /*bütün harfleri büyük yapar*/
+    text-transform: capitalize;  /*Kelimelerin ilk harflerini büyük yapar sola hizalar*/
+    line-height: 30px;  /*satır yüksekliği vermek için kullanılır sağa hizalar*/
+}
